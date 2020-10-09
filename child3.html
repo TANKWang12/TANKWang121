@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		  <link rel="stylesheet" href="style/demo.css" />
+		<title>我的个人旅游网站--关于我们</title>
+		<style>
+			.clearfix::after{
+				content:'';
+				height:0;
+				display:block;
+				clear:both;
+			}
+			.L{
+				float:left;
+			}
+			.R{
+				float:right;
+            }
+            .child3-body{
+                min-height:300px;
+                width:1000px;
+                padding:30px 0;
+                margin: 0 auto;
+            }
+            .body-l-tit li{
+                width:100px;
+                text-align: center;
+                height:40px;
+                line-height: 40px;
+                cursor: pointer;
+                margin-bottom: 20px;
+                border-bottom:1px solid #ccc;
+            }
+            .body-l-tit li:hover{
+                color:#0ff1df;
+            }
+            .body-r{
+                width:800px;
+                min-height:300px;
+            }
+            .about-us1,
+            .join-us,
+            .falv-us{
+                display:none;
+            }
+            .curr-active{
+                color:#00ffea;
+                font-weight: bolder;
+                border-bottom:1px solid #00ffea!important;
+            }
+            .about-us1-tit{
+                text-align:center;
+                font-size: 22px;
+                font-weight: bold;
+                padding:10px 0 20px 0;
+            }
+            .show{
+                display:block;
+            }
+            .none{
+                display:none;
+            }
+            .f-fixed{
+                margin-top: 20px;
+            }
+            .f-fixed li{
+                width:25%;
+                padding:10px 0;
+                float:left;
+                text-align: center;
+                cursor: pointer;
+                border-bottom:6px solid #eee;
+            }
+            .f-fixed li:hover{
+                border-bottom:6px solid #00ffea;
+            }
+            .join-pos{
+                min-height: 600px;
+            }
+            .join-us-del{
+                display:none;
+            }
+            .active-li{
+                border-bottom:6px solid #00ffea!important;
+            }
+            .active-li .join-us-del{
+                display:block;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="img/alt.png" alt="" />
+			</div>
+			<ul class='nav'>
+				<li><a href="demo.html">网站首页</a></li>
+				<li><a href="child1.html" >精品路线</a></li>
+				<li><a href="child2.html">APP下载</a></li>
+				<li><a href="child3.html" class="currActive-index">关于我们</a></li>
+				<li><a href="child4.html" >联系我们</a></li>
+			</ul>
+			<div class="nav-list">
+				<div class="list">
+					<img src="img/xialaList.png"/>
+				</div>
+				<div class="list-nav">
+					<ul>
+                        <li><a href="demo.html">网站首页</a></li>
+                        <li><a href="child1.html">精品路线</a></li>
+                        <li><a href="child2.html">APP下载</a></li>
+                        <li><a href="child3.html" class="currActive-index">关于我们</a></li>
+                        <li><a href="child4.html">联系我们</a></li>
+			</ul>
+				</div>
+			</div>
+		</div>
+        <div class="lunbo"></div>
+        <div class="child3-body clearfix">
+            <div class="body-l L">
+                <ul class="body-l-tit">
+                    <li class="js-click curr-active">关于我们</li>
+                    <li class="js-click">加入我们</li>
+                    <li class="js-click">法律声明</li>
+                </ul>
+            </div>
+            <div class="body-r R">
+                <div class="body-r-about">
+                    <!-- 关于我们 -->
+                    <div class="about-us1 show js-show" data-key="0">
+                        <div class="about-us1-tit">关于我们</div>
+                        <div class="about-us1-info">
+                            <p style="color:#333;font-size:18px;font-weight: bold;margin:10px 0;">公司简介</p>
+                            <p style="color:#666;font-size:16px;line-height: 35px;text-indent:12px;">
+                                湖北XX信息科技有限公司（简称：XX科技）是专业从事互联网＋艺术的移动
+                                互联网及互联网软件产品和服务的高新技术企业，公司坐落于美丽的人间天堂湖北省
+                                武汉市。公司一直致力于核心软件产品平台的自主研发，研发了国内先进的艺术
+                                考生综合性互联网服务平台—艺术升。为全国优质的艺术高校（综合性大学艺术学院）
+                                提供信息技术支持服务，拥有朝气蓬勃的研发团队和经验丰富的管理团队，建立了完善
+                                的管理体系、质量保障体系、售后服务体系。 依托多年的教育行业信息化建设
+                                经验和雄厚的技术实力，坚持以服务为立足点，以服务最终用户为导向，致力于成为国内
+                                优秀互联网＋ 艺术的技术服务提供商，产品已经在国内多家高校进行应用和推广，得到了用户及业界良好的评价和口碑。
+                            </p>
+                            <p style="color:#333;font-size:18px;font-weight: bold;margin:20px 0;">团队理念</p>
+                            <p style="color:#666;font-size:16px;line-height: 35px;text-indent:12px;">服务为本，真诚协作，创新求变，艰苦奋斗，激情快乐。</p>
+                            <p style="color:#333;font-size:18px;font-weight: bold;margin:20px 0;">合作伙伴</p>
+                            <p style="color:#666;font-size:16px;line-height: 35px;text-indent:12px;">阿里巴巴 &nbsp;&nbsp;&nbsp;&nbsp; 腾讯 &nbsp;&nbsp;&nbsp;&nbsp; 华为 &nbsp;&nbsp;&nbsp;&nbsp; 字节跳动</p>
+                        </div>
+                    </div>
+                    <!-- 加入我们 -->
+                    <div class="join-us js-show" data-key="1">
+                        <div class="about-us1-tit">加入我们</div>
+                    <p style="color:#666;font-size:16px;line-height: 35px;">
+                        我们是一支年轻、激情、头脑敏锐、朝气蓬勃的团队。他们充满活力、彰显个性，又愿意为远大的理想而付出脚踏实地的努力！如果您对自己的创造力、学习力充满信心，又相信“态度决定一切”的真理，愿付出辛勤的汗水去实现个人在专业领域内的职业化，这里将是你职业加速的优质跑道、梦想起飞的良好平台。为了你和亦闲共同的美好明天，让我们携手！
+                        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有意加盟的有识之士，请将简历发至：<a
+                            href="#">hr@yiXXXXinfo.com</a>
+                        <br />地址：湖北省武汉市洪山区108号XXCBD5幢5楼。
+                        <br/>
+                        <span style="color:#666;font-size:16px;line-height: 35px;">联系电话：0001-266XX612</span>
+                    </p>
+                    <div class="join-pos">
+                        <ul class="f-fixed clearfix" style="position:relative;">
+                            <li class="active-li">Android 开发工程师
+                                <div class="join-us-del" style="position:absolute;top:50px;left:20px;width:800px;text-align: start;">
+                                    <p style="font-size:18px;color:#333;font-weight: bold;margin:10px 0;">职位描述：</p>
+                                    <p style="font-size:16px;color:#666;line-height:35px;">
+                                        1、负责Android 平台的软件产品的设计与开发；<br>
+                                        2、开发和维护移动设备客户端，基于Android系统的智能手机和平板电脑设备的应用；<br>
+                                        3、学习和研究新技术以满足产品的需求；<br>
+                                    </p>
+                                    <p style="font-size:18px;color:#333;font-weight: bold;margin:10px 0;">任职要求：</p>
+                                    <p style="font-size:16px;color:#666;line-height:35px;">
+                                        1、1年以上Android平台开发经验，本科及以上学历<br>
+                                        2、具备良好的Java技术功底，良好的编程习惯，有较强独立解决问题的能力；<br>
+                                        3、熟悉Android系统体系结构、对手机软件性能优化、内存优化、安全等有一定了解；<br>
+                                        4、熟悉androidsdk个版本之间的差异；<br>
+                                        5、具有强烈的进取心和求知欲望，善于学习和运用新知识，可承受一定的工作压力<br>
+                                        6、有其它开发语言工作经验优先<br>
+                                    </p>     
+                                </div>
+                            </li>
+                            <li>iOS 开发工程师
+                                <div class="join-us-del" style="position:absolute;top:50px;left:20px;width:800px;text-align: start;">
+                                    <p style="font-size:18px;color:#333;font-weight: bold;margin:10px 0;">职位描述：</p>
+                                    <p style="font-size:16px;color:#666;line-height:35px;">
+                                        1、负责iOS客户端相关产品的研发，编写代码注释及相关文档；<br>
+                                        2、负责新技术的学习、研究和应用；<br>
+                                        3、配合市场、运营等其他部门，提供相关技术支持；<br>
+                                    </p>
+                                    <p style="font-size:18px;color:#333;font-weight: bold;margin:10px 0;">任职要求：</p>
+                                    <p style="font-size:16px;color:#666;line-height:35px;">
+                                        1、精通ObjectiveC语言；熟悉Swift语言者优先考虑； <br>
+                                        2、2年以上iOS开发经验； <br>
+                                        3、了解iOS系统调用，深刻理解Objective-C的运行机制； <br>
+                                        4、熟练运用XCode，InterfaceBuilder等开发工具，熟悉AppStore发布流程； <br>
+                                        5、熟悉iOS框架以及各种特性，深刻理解常用设计模式； <br>
+                                        6、有良好沟通和团队协作能力、优秀的心里素质，有很强的责任心，善于思考，能独立分析和解决问题。<br />
+                                    </p>
+                                </div>
+                            </li>
+                            <li>大数据开发工程师
+                                <div class="join-us-del" style="position:absolute;top:50px;left:20px;width:800px;text-align: start;">
+                                    <p style="font-size:18px;color:#333;font-weight: bold;margin:10px 0;">职位描述：</p>
+                                    <p style="font-size:16px;color:#666;line-height:35px;">
+                                        1. 参与产品平台各个板块业务，需要具备领域建模能力，能看透业务本质化繁为简；<br>
+                                        2. 根据业务需求，参与从业务分析、特征分析、模型建立、算法实现等过程，并逐步迭代算法效果； <br>
+                                        3.热爱技术专研，对大数据技术有浓厚兴趣。<br />
+                                    </p>
+                                    <p style="font-size:18px;color:#333;font-weight: bold;margin:10px 0;">任职要求：</p>
+                                    <p style="font-size:16px;color:#666;line-height:35px;">
+                                        1. 三年以上Java开发及设计经验，优秀的编程能力及良好的开发习惯。具备独立沟通需求，设计，架构，开发的能力；<br>
+                                        2. 具备良好的识别业务关键需求和设计领域模型的能力；<br>
+                                        3. 具有良好的商业敏感度和优秀的数据分析技能，能够开发创新而实际的分析方法以解决复杂的商业问题；<br>
+                                        4.
+                                        至少熟悉一种关系型数据库如Oracle、mysql等，熟练掌握Hive/SQL/Hbase，熟悉Storm/Spark/Hadoop/Map-Reduce/MPI分布式计算框架，有海量数据处理经验者优先; <br>
+                                        5. 有大数据建模、大数据存储方面设计,并有大数据分析处理实际项目经验优先；<br>
+                                        6. 有大型分布式、高并发、高负载、高可用性系统设计和稳定性经验优先。<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>Java 开发工程师
+                                <div class="join-us-del" style="position:absolute;top:50px;left:20px;width:800px;text-align: start;">
+                                    <p style="font-size:18px;color:#333;font-weight: bold;margin:10px 0;">职位描述：</p>
+                                    <p style="font-size:16px;color:#666;line-height:35px;">
+                                        1、参与业务需求分析；<br>
+                                        2、进行软件、系统的技术方案设计；<br>
+                                        3、编写开发计划，负责编码实现，确保产品的质量、安全和性能；<br>
+                                        4、维护升级优化现有产品，快速定位并修复现有软件缺陷等；<br />
+                                    </p>
+                                    <p style="font-size:18px;color:#333;font-weight: bold;margin:10px 0;">任职要求：</p>
+                                    <p style="font-size:16px;color:#666;line-height:35px;">
+                                        1、本科及以上学历，计算机及相关专业毕业，2年以上Java Web开发经验；<br>
+                                        2、精通Java，熟悉Spring、SpringMVC、MyBatis等开源框架相关技术；<br>
+                                        3、熟悉Weblogic、Tomcat等WEB应用服务器，有相关应用部署经验；<br>
+                                        4、熟悉MongoDB、Mysql、Sqlserver数据库；<br>
+                                        5、熟悉分布式系统概念、架构，熟悉Hadoop/Solr/Lucene等开源技术；<br>
+                                        6、熟悉Linux环境WEB服务器开发与部署；<br>
+                                        7、具备良好的代码编写规范，熟悉网站开发安全知识；<br>
+                                        8、具备很好的理解分析能力，善于与他人沟通合作，具有团队精神，良好的自学能力。<br />
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- 法律声明 -->
+                    <div class="falv-us js-show" data-key="2">
+                        <div class="about-us1">法律声明</div>
+                        <div class="about-us1-info">
+                            <p style="color:#333;font-size:18px;font-weight: bold;margin:20px 0;">声明</p>
+                            <p style="color:#666;font-size:16px;line-height: 35px;text-indent:12px;">本网站用到的所有数据、图片等均为网络资源，仅供个人学习使用，请勿商用！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="footer">
+			<div class="footer-list clearfix">
+				<dl class="L footer-margin-r about-us">
+					<dd class="footer-list-tit">关于我们</dd>
+					<dt><a href="child4.html">联系我们</a></dt>
+					<dt><a href="child3.html?id=1">加入我们</a></dt>
+					<dt><a href="child3.html?id=2">法律声明</a></dt>
+				</dl>
+				<dl class="L footer-margin-r">
+					<dd class="footer-list-tit">工作时间</dd>
+					<dt>上午：9：00 - 12:00</dt>
+					<dt>下午：14:00 - 18:00</dt>
+				</dl>
+				<dl class="R footer-margin-r">
+					<dd class="footer-list-tit">微信公众号</dd>
+					<dt style="width:100px;height:100px;">
+						<img src="./img/code.png" alt="" style="width:100%;height:100%;">
+					</dt>
+				</dl>
+			</div>
+			<div class="footer-last">
+				<p>版权所有 © 徐超 1998-2020。保留一切权利。 &nbsp;&nbsp;鄂ICP备1103XXXX号</p>
+				<p style="margin:20px 0;"></p>
+				<p><img src="./img/ghs.png" alt="" style="vertical-align: bottom; margin-right: 5px;">	鄂公网安备 42020XXXX90120号</p>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/extend_lunbo.js"></script>
+        <script src="js/demo.js"></script>
+        <script>
+            // 左边当前活动标签
+            var currIndex = 0;
+            $('.body-l-tit').children().each(function(index,ele){
+                ele.addEventListener('click',function(){
+                    $('.body-l-tit').children().removeClass('curr-active')
+                    $(this).toggleClass('curr-active')
+                    $('.js-show').removeClass('show')
+                    $('.js-show[data-key='+index+']').toggleClass('show')
+                    currIndex = index
+                })
+            })
+
+            $('.f-fixed').children().each(function(index,ele){
+                $(ele).hover(function(){
+                    $('.f-fixed').children().removeClass('active-li')
+                    $(this).addClass('active-li')
+                },function(){
+                    // console.log('leave')
+                })
+            })
+            
+
+            getCurrIndex(window.location.search)
+            function getCurrIndex(params){
+                if(params === ''){
+                    return
+                }
+                var index = params.slice(-1)
+                $('.js-click').removeClass('curr-active').eq(index).toggleClass('curr-active')
+                $('.js-show').removeClass('show')
+                $('.js-show[data-key='+index+']').toggleClass('show')
+            }
+            
+        </script>
+	</body>
+</html>
